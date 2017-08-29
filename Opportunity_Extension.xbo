@@ -1,0 +1,39 @@
+﻿import AP.Common.GDT;
+import AP.CRM.Global;
+
+[Extension] businessobject AP.CRM.Global:Opportunity {
+ 
+        // You must activate this business object before you can access the extension fields
+        // or messages in script files, forms, and screens.
+
+    
+   		node InstalledObject {
+   	    } 
+    
+   		node Item {
+		[Label("Probability %")] element Z_Item_Probability:DecimalValue;
+				   	   
+      		node ItemRevenuePlanReporting {
+      	    } 
+
+        } 
+    
+   		node Party {
+   	   
+      		node PartyContactParty {
+      	    } 
+       
+      		node CompetitorProduct {
+      	    } 
+
+        } 
+    
+   		node RevenuePlanHeader {
+   	   
+      		node RevenuePlanReporting {
+      	    } 
+
+        } 
+     
+  
+}
